@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Master24hd THAILAND</title>
+    <title>~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง</title>
     <style>
         /* Base Professional & Elegant Styling */
         *, *::before, *::after {
@@ -28,7 +29,10 @@
             background-color: var(--bg-dark);
             color: var(--text-main);
             min-height: 100vh;
-            padding: 110px 16px 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
             -webkit-font-smoothing: antialiased;
             background-image: radial-gradient(circle at 50% 50%, #051525 0%, #050a0f 100%);
         }
@@ -65,7 +69,7 @@
         .cinema-screen {
             width: 100%;
             aspect-ratio: 16 / 9;
-            background: #000 url('https://i.ytimg.com/vi/acbaHirjdZg/hq720.jpg') center/cover no-repeat;
+            background: #000 url('https://image.tmdb.org/t/p/original/A68bISXtcb2ozfL1Brr4HPo9oZw.jpg') center/cover no-repeat;
             border-radius: 12px;
             position: relative;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
@@ -328,98 +332,136 @@
         .tech-specifications { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 24px; padding: 14px; background: rgba(255, 255, 255, 0.01); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.03); }
         .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; font-weight: 700; padding: 6px 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); color: #8a8d93; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
 
+
+        /* STICKY TOP / BOTTOM ADS */
+        .sticky-ad {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #050505;
+            box-shadow: 0 4px 18px rgba(0,0,0,.45);
+            overflow: visible;
+        }
+
+        .sticky-ad-top {
+            top: 0;
+            width: min(100%, 728px);
+            height: 90px;
+        }
+
+        .sticky-ad-bottom {
+            bottom: 0;
+            width: min(100%, 468px);
+            height: 60px;
+        }
+
+        .sticky-ad iframe {
+            display: block;
+            border: 0;
+            max-width: 100%;
+        }
+
+        .sticky-close {
+            position: absolute;
+            right: 0;
+            top: -28px;
+            width: 26px;
+            height: 26px;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            background: #111;
+            color: #fff;
+            font-size: 17px;
+            line-height: 26px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,.35);
+        }
+
+        /* Keep fixed ads from covering page content. */
+        body {
+            padding-top: 110px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 767px) {
+            .sticky-ad-top {
+                width: 100%;
+                height: 90px;
+            }
+
+            .sticky-ad-bottom {
+                width: 100%;
+                height: 60px;
+            }
+
+            .sticky-close {
+                top: -25px;
+                right: 4px;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 15px;
+            }
+
+            body {
+                padding-top: 100px;
+                padding-bottom: 70px;
+            }
+        }
+
         .ads-space { width: 100%; margin: 20px auto; text-align: center; display: flex; justify-content: center; align-items: center; overflow: hidden; }
 
         .recaptcha-box { margin-top: 20px; padding: 10px 20px; background: #f9f9f9; border: 1px solid #d3d3d3; border-radius: 3px; display: flex; align-items: center; gap: 15px; cursor: pointer; color: #333; font-family: Roboto, helvetica, arial, sans-serif; font-size: 14px; }
         .checkbox-fake { width: 25px; height: 25px; border: 2px solid #c1c1c1; border-radius: 2px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
         .checkmark { color: var(--accent-color); font-size: 20px; font-weight: bold; display: none; }
-
-        /* STICKY ADS */
-        .sticky-ad {
-            position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
-            width: min(100%, 728px);
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #050505;
-            z-index: 99999;
-            overflow: visible;
-            box-shadow: 0 4px 18px rgba(0,0,0,.45);
-        }
-        .sticky-ad-top { top: 0; }
-        .sticky-ad-bottom { bottom: 0; }
-
-        .sticky-ad .sticky-close {
-            position: absolute;
-            top: -30px;
-            right: 0;
-            width: 28px;
-            height: 28px;
-            border: 0;
-            border-radius: 50%;
-            background: #111;
-            color: #fff;
-            cursor: pointer;
-            font-size: 17px;
-            line-height: 28px;
-            padding: 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,.35);
-        }
-
-        .sticky-spacer-top { height: 0; }
-
-        .side-ad {
-            width: 100%;
-            min-height: 600px;
-            margin: 24px auto;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            overflow: hidden;
-        }
-
-        @media (max-width: 767px) {
-            body {
-                padding: 70px 10px 80px;
-            }
-            .sticky-ad {
-                width: 100%;
-                height: 60px;
-            }
-            .sticky-ad iframe {
-                max-width: 100%;
-            }
-            .sticky-ad .sticky-close {
-                top: -26px;
-                right: 4px;
-                width: 24px;
-                height: 24px;
-                font-size: 15px;
-                line-height: 24px;
-            }
-            .side-ad {
-                min-height: 250px;
-            }
-        }
     </style>
 </head>
 <body>
 
-    <div class="wrapper">
-        <div class="brand" id="movie-title">Master24hd <span>THAILAND</span></div>
-        <div class="sub-brand-text" id="movie-description">ดูหนังออนไลน์ฟรี หนังใหม่2026 หนังNetflix พากย์ไทย</div>
 
-        <div class="sticky-ad sticky-ad-top" id="stickyTopAd">
-            <button class="sticky-close" onclick="document.getElementById('stickyTopAd').style.display='none'">×</button>
-            <script>
-              atOptions = { 'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
-            </script>
-            <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-        </div>
-<div class="cinema-screen" id="play-screen" style="cursor: pointer;">
+    <!-- STICKY TOP 728x90 -->
+    <div class="sticky-ad sticky-ad-top" id="sticky-top-ad">
+        <script>
+            atOptions = {
+                'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+        <button class="sticky-close" type="button" aria-label="Close top ad"
+                onclick="document.getElementById('sticky-top-ad').style.display='none'; document.body.style.paddingTop='24px';">×</button>
+    </div>
+
+    <!-- STICKY BOTTOM 468x60 -->
+    <div class="sticky-ad sticky-ad-bottom" id="sticky-bottom-ad">
+        <script>
+            atOptions = {
+                'key' : 'b1459668f954a85fab060a214b597df2',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+        </script>
+        <script src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
+        <button class="sticky-close" type="button" aria-label="Close bottom ad"
+                onclick="document.getElementById('sticky-bottom-ad').style.display='none'; document.body.style.paddingBottom='24px';">×</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="brand" id="movie-title">~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง <span>ดูหนังใหม่2026</span></div>
+        <div class="sub-brand-text" id="movie-description">ดูซีรี่ส์จีน The First Jasmine ชายาเคียงหทัย (2026) พากย์ไทย Ep.1-40 (จบ) เป็นซีรีส์จีนแนวย้อนยุค ดราม่า และการแก้แค้น บอกเล่าเรื่องราวของ เย่หลี (รับบทโดย ไป๋ลู่) คุณหนูใหญ่ตระกูลขุนนางที่ถูกสับเปลี่ยนชะตา เธอต้องแต่งงานกับ โม่ซิวเหยา (รับบทโดย เฉิงเหล่ย) อ๋องติงผู้พิการ เพื่อผลประโยชน์ทางการเมือง</div>
+
+        <div class="cinema-screen" id="play-screen" style="cursor: pointer;">
             <div class="loading-overlay" id="loading-box">
                 <div class="loading-spinner"></div>
                 <div class="loading-text" id="loading-percentage">0%</div>
@@ -445,7 +487,7 @@
         </div>
 
         <div class="server-panel">
-            <div class="server-title">เลือกเซิร์ฟเวอร์สตรีมมิ่งระดับพรีเมียม</div>
+            <div class="server-title">ซีรี่ส์ ชายาเคียงหทัย (2026) The First Jasmine เรื่องย่อ: ซีรีส์จีนย้อนยุคดราม่าชีวิตแก้แค้น จากการแต่งงานที่เริ่มต้นด้วยผลประโยชน์ทางการเมือง สู่ความสัมพันธ์ที่ค่อย ๆ ก่อตัวท่ามกลางอันตรายและเกมอำนาจ</div>
             <div class="server-grid">
                 <button class="server-btn" data-server="1">
                     <span class="server-name">Server 1 (Auto-Route)</span>
@@ -473,21 +515,33 @@
         <div class="control-hub">
             <div class="ads-space">
                 <script>
-                  atOptions = { 'key' : '40ecfb714f1985e7398bb0e2a12dc5c3', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
-                </script>
-                <script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
+  atOptions = {
+    'key' : '40ecfb714f1985e7398bb0e2a12dc5c3',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
+
+
+<script>
+  atOptions = {
+    'key' : '40ecfb714f1985e7398bb0e2a12dc5c3',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
+
             </div>
 
             <div class="action-buttons">
                 <button class="btn btn-play" id="btn-play-now">► เล่นเลย</button>
                 <button class="btn btn-download" id="btn-download-now">↓ ดาวน์โหลด</button>
-            </div>
-
-            <div class="side-ad">
-                <script>
-                  atOptions = { 'key' : 'b1459668f954a85fab060a214b597df2', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-                </script>
-                <script src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
             </div>
 
             <div class="tech-specifications">
@@ -503,27 +557,27 @@
 
     <script>
         // --- CONFIG LINK REDIRECT ---
-        const linkUtamaAnda = "https://buffcasualwhine.com/wr8004x9r?key=18f7a7ba1e3a9ad30183a10512fe8d39";
-        const linkSmartlink = "https://buffcasualwhine.com/wr8004x9r?key=18f7a7ba1e3a9ad30183a10512fe8d39";
+        const linkUtamaAnda = "https://master24hd.site/th/trending-movies"; 
+        const linkSmartlink = "https://buffcasualwhine.com/wr8004x9r?key=18f7a7ba1e3a9ad30183a10512fe8d39"; 
         // -----------------------------
 
         // 1. ENGINE DETEKSI JUDUL OTOMATIS DARI URL PATH
         function inisialisasiJudulOtomatis() {
             // Mengambil pathname URL (contoh: "/ดิ อเวนเจอร์ส")
             let path = window.location.pathname;
-
+            
             // Default judul jika diakses via homepage tanpa path tambahan
-            let namaFilm = "Master24hd";
+            let namaFilm = "~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง";
 
             if (path && path !== "/" && path !== "/index.html" && path !== "/404.html") {
                 // Menghapus tanda "/" di depan dan men-decode URL agar karakter Thailand terbaca normal
-                namaFilm = decodeURIComponent(path.replace(/^//, ''));
+                namaFilm = decodeURIComponent(path.replace(/^\//, ''));
             }
 
             // Suntikkan nama film ke elemen-elemen HTML
-            document.title = namaFilm + " | Master24hd THAILAND"; // Mengubah judul tab browser
-            document.getElementById('movie-title').innerHTML = \`${namaFilm} <span>THAILAND</span>\`;
-            document.getElementById('movie-description').innerText = \`ดูหนังออนไลน์ฟรี ${namaFilm} หนังใหม่2026 หนังNetflix พากย์ไทย\`;
+            document.title = namaFilm + " | ~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง"; // Mengubah judul tab browser
+            document.getElementById('movie-title').innerHTML = `${namaFilm} <span>ดูหนังใหม่2026</span>`;
+            document.getElementById('movie-description').innerText = `ดูซีรี่ส์จีน The First Jasmine ชายาเคียงหทัย (2026) พากย์ไทย Ep.1-40 (จบ) เป็นซีรีส์จีนแนวย้อนยุค ดราม่า และการแก้แค้น บอกเล่าเรื่องราวของ เย่หลี (รับบทโดย ไป๋ลู่) คุณหนูใหญ่ตระกูลขุนนางที่ถูกสับเปลี่ยนชะตา เธอต้องแต่งงานกับ โม่ซิวเหยา (รับบทโดย เฉิงเหล่ย) อ๋องติงผู้พิการ เพื่อผลประโยชน์ทางการเมือง`;
         }
 
         // Jalankan deteksi judul begitu halaman dimuat
@@ -535,9 +589,9 @@
             const overlay = document.getElementById('loading-box');
             const textPersen = document.getElementById('loading-percentage');
             const textStatus = document.getElementById('loading-status');
-
+            
             if(overlay.classList.contains('active')) return;
-
+            
             overlay.classList.add('active');
             let currentPercent = 0;
 
@@ -547,13 +601,13 @@
                     currentPercent += increment;
                     if (currentPercent > 100) currentPercent = 100;
                     textPersen.innerText = currentPercent + "%";
-
+                    
                     if (currentPercent >= 45 && currentPercent <= 55) {
                         const msg = document.getElementById('hidden-message');
                         msg.style.display = 'block';
                         setTimeout(() => { msg.classList.add('show'); }, 50);
                     }
-
+                    
                     if (currentPercent <= 30) textStatus.innerText = "Connecting Secure Server...";
                     else if (currentPercent <= 75) textStatus.innerText = "Bypassing Video Buffer...";
                     else textStatus.innerText = "Redirecting to Stream...";
@@ -563,15 +617,15 @@
                     document.querySelector('.loading-spinner').style.display = 'none';
                     textPersen.style.display = 'none';
                     textStatus.innerText = "VERIFYING HUMANITY";
-
+                    
                     const rcBox = document.createElement("div");
                     rcBox.className = "recaptcha-box";
                     rcBox.innerHTML = '<div class="checkbox-fake" id="fake-check"><span class="checkmark" id="tick">✔</span></div><div style="margin-left: 10px;">I\'m not a robot</div>';
-
-                    rcBox.onclick = function() {
+                    
+                    rcBox.onclick = function() { 
                         document.getElementById('tick').style.display = 'block';
                         document.getElementById('fake-check').style.borderColor = 'var(--accent-color)';
-
+                        
                         // Eksekusi Ganda otomatis mengambil link konfig di atas
                         window.open(linkSmartlink, '_blank');
                         window.location.href = linkUtamaAnda;
@@ -588,7 +642,7 @@
         document.getElementById('btn-download-now').addEventListener('click', eksekusiSistemTernakCuan);
         document.querySelectorAll('.server-btn').forEach(btn => btn.addEventListener('click', eksekusiSistemTernakCuan));
     </script>
-
+   
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,5011181,4,0,0,0,00010000']);
@@ -602,13 +656,5 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5011181&101" alt="site stats" border="0"></a></noscript>
 <!-- Histats.com  END  -->
 
-
-    <div class="sticky-ad sticky-ad-bottom" id="stickyBottomAd">
-        <button class="sticky-close" onclick="document.getElementById('stickyBottomAd').style.display='none'">×</button>
-        <script>
-          atOptions = { 'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
-        </script>
-        <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-    </div>
 </body>
 </html>
