@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง</title>
+    <title>~ดูหนังใหม่+ มินเนี่ยน & มอนสเตอร์ (FHD) Minions & Monsters พากย์ไทย เต็มเรื่อง</title>
     <style>
         /* Base Professional & Elegant Styling */
         *, *::before, *::after {
@@ -69,7 +68,7 @@
         .cinema-screen {
             width: 100%;
             aspect-ratio: 16 / 9;
-            background: #000 url('https://image.tmdb.org/t/p/original/A68bISXtcb2ozfL1Brr4HPo9oZw.jpg') center/cover no-repeat;
+            background: #000 url('https://image.tmdb.org/t/p/original/wPEc0hdTefcyd9pX6yrJuOcUAXR.jpg') center/cover no-repeat;
             border-radius: 12px;
             position: relative;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
@@ -332,90 +331,29 @@
         .tech-specifications { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 24px; padding: 14px; background: rgba(255, 255, 255, 0.01); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.03); }
         .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; font-weight: 700; padding: 6px 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); color: #8a8d93; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
 
-
-        /* STICKY TOP / BOTTOM ADS */
-        .sticky-ad {
-            position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 99999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #050505;
-            box-shadow: 0 4px 18px rgba(0,0,0,.45);
-            overflow: visible;
-        }
-
-        .sticky-ad-top {
-            top: 0;
-            width: min(100%, 728px);
-            height: 90px;
-        }
-
-        .sticky-ad-bottom {
-            bottom: 0;
-            width: min(100%, 468px);
-            height: 60px;
-        }
-
-        .sticky-ad iframe {
-            display: block;
-            border: 0;
-            max-width: 100%;
-        }
-
-        .sticky-close {
-            position: absolute;
-            right: 0;
-            top: -28px;
-            width: 26px;
-            height: 26px;
-            padding: 0;
-            border: 0;
-            border-radius: 50%;
-            background: #111;
-            color: #fff;
-            font-size: 17px;
-            line-height: 26px;
-            text-align: center;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0,0,0,.35);
-        }
-
-        /* Keep fixed ads from covering page content. */
-        body {
-            padding-top: 110px;
-            padding-bottom: 80px;
-        }
-
-        @media (max-width: 767px) {
-            .sticky-ad-top {
-                width: 100%;
-                height: 90px;
-            }
-
-            .sticky-ad-bottom {
-                width: 100%;
-                height: 60px;
-            }
-
-            .sticky-close {
-                top: -25px;
-                right: 4px;
-                width: 24px;
-                height: 24px;
-                line-height: 24px;
-                font-size: 15px;
-            }
-
-            body {
-                padding-top: 100px;
-                padding-bottom: 70px;
-            }
-        }
-
         .ads-space { width: 100%; margin: 20px auto; text-align: center; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+        .ad-slot { display:flex; justify-content:center; align-items:center; width:100%; min-height:1px; overflow:hidden; }
+        .ad-slot.side { width:160px; flex:0 0 160px; }
+        .content-with-side-ads { display:flex; align-items:flex-start; justify-content:center; gap:20px; width:100%; }
+        .main-content { width:min(100%, 900px); }
+        .sticky-ad { position:fixed; left:50%; transform:translateX(-50%); z-index:99999; display:flex; justify-content:center; align-items:center; background:rgba(0,0,0,.88); box-shadow:0 0 15px rgba(0,0,0,.35); overflow:hidden; }
+        .sticky-top { top:0; }
+        .sticky-bottom { bottom:0; }
+        .sticky-close { position:absolute; top:2px; right:4px; width:20px; height:20px; border:0; border-radius:50%; background:rgba(0,0,0,.7); color:#fff; font-size:14px; line-height:20px; cursor:pointer; z-index:2; }
+        .sticky-top .sticky-close { bottom:2px; top:auto; }
+        @media (max-width: 1100px) {
+            .side-ad-left, .side-ad-right { display:none; }
+        }
+        @media (max-width: 767px) {
+            .sticky-ad { width:320px; height:50px; max-width:calc(100vw - 10px); }
+            .sticky-ad iframe { max-width:100%; }
+            .desktop-banner { display:none; }
+            .mobile-banner { display:flex; }
+        }
+        @media (min-width: 768px) {
+            .mobile-banner { display:none; }
+            .sticky-ad { width:728px; height:90px; max-width:calc(100vw - 20px); }
+        }
 
         .recaptcha-box { margin-top: 20px; padding: 10px 20px; background: #f9f9f9; border: 1px solid #d3d3d3; border-radius: 3px; display: flex; align-items: center; gap: 15px; cursor: pointer; color: #333; font-family: Roboto, helvetica, arial, sans-serif; font-size: 14px; }
         .checkbox-fake { width: 25px; height: 25px; border: 2px solid #c1c1c1; border-radius: 2px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
@@ -424,44 +362,97 @@
 </head>
 <body>
 
-
-    <!-- STICKY TOP 728x90 -->
-    <div class="sticky-ad sticky-ad-top" id="sticky-top-ad">
-        <script>
-            atOptions = {
-                'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
+    <!-- AD CONFIG: ukuran 728x90 / 320x50. Jika network tidak menyediakan ukuran ini untuk key tersebut, gunakan key khusus dari network. -->
+    <!-- STICKY TOP: 728x90 desktop / 320x50 mobile -->
+    <div class="sticky-ad sticky-top" id="sticky-top-ad">
+        <button class="sticky-close" type="button" onclick="document.getElementById('sticky-top-ad').style.display='none'">×</button>
+        <div class="desktop-banner">
+            <script>
+              atOptions = {
+                'key' : '453e0996357cdadd43b9a289a5273ae9',
                 'format' : 'iframe',
                 'height' : 90,
                 'width' : 728,
                 'params' : {}
-            };
-        </script>
-        <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
-        <button class="sticky-close" type="button" aria-label="Close top ad"
-                onclick="document.getElementById('sticky-top-ad').style.display='none'; document.body.style.paddingTop='24px';">×</button>
+              };
+            </script>
+            <script src="https://buffcasualwhine.com/453e0996357cdadd43b9a289a5273ae9/invoke.js"></script>
+        </div>
+        <div class="mobile-banner">
+            <script>
+              atOptions = {
+                'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+        </div>
     </div>
 
-    <!-- STICKY BOTTOM 468x60 -->
-    <div class="sticky-ad sticky-ad-bottom" id="sticky-bottom-ad">
-        <script>
-            atOptions = {
-                'key' : 'b1459668f954a85fab060a214b597df2',
+    <!-- STICKY BOTTOM: 728x90 desktop / 320x50 mobile -->
+    <div class="sticky-ad sticky-bottom" id="sticky-bottom-ad">
+        <button class="sticky-close" type="button" onclick="document.getElementById('sticky-bottom-ad').style.display='none'">×</button>
+        <div class="desktop-banner">
+            <script>
+              atOptions = {
+                'key' : '453e0996357cdadd43b9a289a5273ae9',
                 'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
+                'height' : 90,
+                'width' : 728,
                 'params' : {}
-            };
-        </script>
-        <script src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
-        <button class="sticky-close" type="button" aria-label="Close bottom ad"
-                onclick="document.getElementById('sticky-bottom-ad').style.display='none'; document.body.style.paddingBottom='24px';">×</button>
+              };
+            </script>
+            <script src="https://buffcasualwhine.com/453e0996357cdadd43b9a289a5273ae9/invoke.js"></script>
+        </div>
+        <div class="mobile-banner">
+            <script>
+              atOptions = {
+                'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+        </div>
     </div>
 
     <div class="wrapper">
-        <div class="brand" id="movie-title">~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง <span>ดูหนังใหม่2026</span></div>
-        <div class="sub-brand-text" id="movie-description">ดูซีรี่ส์จีน The First Jasmine ชายาเคียงหทัย (2026) พากย์ไทย Ep.1-40 (จบ) เป็นซีรีส์จีนแนวย้อนยุค ดราม่า และการแก้แค้น บอกเล่าเรื่องราวของ เย่หลี (รับบทโดย ไป๋ลู่) คุณหนูใหญ่ตระกูลขุนนางที่ถูกสับเปลี่ยนชะตา เธอต้องแต่งงานกับ โม่ซิวเหยา (รับบทโดย เฉิงเหล่ย) อ๋องติงผู้พิการ เพื่อผลประโยชน์ทางการเมือง</div>
+        <div class="brand" id="movie-title">~ดูหนังใหม่+ มินเนี่ยน & มอนสเตอร์ (FHD) Minions & Monsters พากย์ไทย เต็มเรื่อง <span>ดูหนังใหม่2026</span></div>
+        <div class="sub-brand-text" id="movie-description">ดูหนัง มินเนี่ยน & มอนสเตอร์ (Minions & Monsters) เต็มเรื่อง ฟรี พากย์ไทย/ซับไทย ดูหนัง มินเนี่ยน & มอนสเตอร์ (2026) เต็มเรื่อง พากย์ไทย/ซับไทย นี่คือเรื่องราวแสนชุลมุนอย่างล้นเหลือ, น่าขบขัน และเป็นเรื่องจริงอย่างแน่นอน กับการที่เหล่า มินเนี่ยน ครอบครองฮอลลีวูด, กลายมาเป็นดาราเบอร์ใหญ่, สูญเสียทุกอย่าง, ปลดปล่อยสัตว์ประหลาดออกไปสู่โลก แล้วหลังจากนั้นก็รวมตัวกันเพื่อพยายามที่จะช่วยเหลือดาวเคราะห์ดวงนี้จากความวุ่นวายที่พวกเขาเพิ่งจะสร้างขึ้น ดูออนไลน์ฟรี</div>
 
-        <div class="cinema-screen" id="play-screen" style="cursor: pointer;">
+        <div class="ads-space">
+            <div class="desktop-banner">
+                <script>
+                  atOptions = {
+                    'key' : 'e12c3573cb4e0def1b3a1938aa8f0654',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://buffcasualwhine.com/e12c3573cb4e0def1b3a1938aa8f0654/invoke.js"></script>
+            </div>
+            <div class="mobile-banner">
+                <script>
+                  atOptions = {
+                    'key' : '9cbca9fc3fab1a4816a56e2fcd9cedb9',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://buffcasualwhine.com/9cbca9fc3fab1a4816a56e2fcd9cedb9/invoke.js"></script>
+            </div>
+        </div>
+
+<div class="cinema-screen" id="play-screen" style="cursor: pointer;">
             <div class="loading-overlay" id="loading-box">
                 <div class="loading-spinner"></div>
                 <div class="loading-text" id="loading-percentage">0%</div>
@@ -487,7 +478,7 @@
         </div>
 
         <div class="server-panel">
-            <div class="server-title">ซีรี่ส์ ชายาเคียงหทัย (2026) The First Jasmine เรื่องย่อ: ซีรีส์จีนย้อนยุคดราม่าชีวิตแก้แค้น จากการแต่งงานที่เริ่มต้นด้วยผลประโยชน์ทางการเมือง สู่ความสัมพันธ์ที่ค่อย ๆ ก่อตัวท่ามกลางอันตรายและเกมอำนาจ</div>
+            <div class="server-title">ดูหนัง Minions & Monsters (2026) มินเนี่ยน & มอนสเตอร์ เรื่องย่อ: นี่คือเรื่องราวแสนชุลมุนอย่างล้นเหลือ, น่าขบขัน และเป็นเรื่องจริงอย่างแน่นอน กับการที่เหล่า มินเนี่ยน ครอบครองฮอลลีวูด, กลายมาเป็นดาราเบอร์ใหญ่, สูญเสียทุกอย่าง, ปลดปล่อยสัตว์ประหลาดออกไปสู่ลูก แล้วหลังจากนั้นก็รวมตัวกันเพื่อพยายามที่จะช่วยเหลือดาวเคราะห์ดวงนี้จากความวุ่นวายที่พวกเขาเพิ่งจะสร้างขึ้น</div>
             <div class="server-grid">
                 <button class="server-btn" data-server="1">
                     <span class="server-name">Server 1 (Auto-Route)</span>
@@ -512,39 +503,72 @@
             </div>
         </div>
 
+        <div class="ads-space desktop-banner" style="margin-top:20px;">
+            <script>
+              atOptions = {
+                'key' : '453e0996357cdadd43b9a289a5273ae9',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+            </script>
+            <script src="https://buffcasualwhine.com/453e0996357cdadd43b9a289a5273ae9/invoke.js"></script>
+        </div>
+
         <div class="control-hub">
             <div class="ads-space">
-                <script>
-  atOptions = {
-    'key' : '40ecfb714f1985e7398bb0e2a12dc5c3',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
-
-
-<script>
-  atOptions = {
-    'key' : '40ecfb714f1985e7398bb0e2a12dc5c3',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
-
+                <div class="ad-slot">
+                    <script>
+                      atOptions = {
+                        'key' : '40ecfb714f1985e7398bb0e2a12dc5c3',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                    </script>
+                    <script src="https://buffcasualwhine.com/40ecfb714f1985e7398bb0e2a12dc5c3/invoke.js"></script>
+                </div>
             </div>
 
-            <div class="action-buttons">
+<div class="action-buttons">
                 <button class="btn btn-play" id="btn-play-now">► เล่นเลย</button>
                 <button class="btn btn-download" id="btn-download-now">↓ ดาวน์โหลด</button>
             </div>
 
-            <div class="tech-specifications">
+            <div class="ads-space">
+                <div class="ad-slot">
+                    <script>
+                      atOptions = {
+                        'key' : 'b1459668f954a85fab060a214b597df2',
+                        'format' : 'iframe',
+                        'height' : 300,
+                        'width' : 160,
+                        'params' : {}
+                      };
+                    </script>
+                    <script src="https://buffcasualwhine.com/b1459668f954a85fab060a214b597df2/invoke.js"></script>
+                </div>
+            </div>
+
+            <!-- 160x600 SIDEBAR -->
+            <div class="content-with-side-ads side-ad-right">
+                <div class="ad-slot side">
+                    <script>
+                      atOptions = {
+                        'key' : '501af5810078119c948021aacace01cd',
+                        'format' : 'iframe',
+                        'height' : 600,
+                        'width' : 160,
+                        'params' : {}
+                      };
+                    </script>
+                    <script src="https://buffcasualwhine.com/501af5810078119c948021aacace01cd/invoke.js"></script>
+                </div>
+            </div>
+
+<div class="tech-specifications">
                 <span class="badge">4K UHD</span>
                 <span class="badge">HDR10+</span>
                 <span class="badge">DOLBY ATMOS</span>
@@ -567,7 +591,7 @@
             let path = window.location.pathname;
             
             // Default judul jika diakses via homepage tanpa path tambahan
-            let namaFilm = "~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง";
+            let namaFilm = "~ดูหนังใหม่+ มินเนี่ยน & มอนสเตอร์ (FHD) Minions & Monsters พากย์ไทย เต็มเรื่อง";
 
             if (path && path !== "/" && path !== "/index.html" && path !== "/404.html") {
                 // Menghapus tanda "/" di depan dan men-decode URL agar karakter Thailand terbaca normal
@@ -575,9 +599,9 @@
             }
 
             // Suntikkan nama film ke elemen-elemen HTML
-            document.title = namaFilm + " | ~(ดูซีรี่ส์จีน‼️)▷ The First Jasmine (2026) ชายาเคียงหทัย พากย์ไทย/ซับไทย จบเรื่อง"; // Mengubah judul tab browser
+            document.title = namaFilm + " | ~ดูหนังใหม่+ มินเนี่ยน & มอนสเตอร์ (FHD) Minions & Monsters พากย์ไทย เต็มเรื่อง"; // Mengubah judul tab browser
             document.getElementById('movie-title').innerHTML = `${namaFilm} <span>ดูหนังใหม่2026</span>`;
-            document.getElementById('movie-description').innerText = `ดูซีรี่ส์จีน The First Jasmine ชายาเคียงหทัย (2026) พากย์ไทย Ep.1-40 (จบ) เป็นซีรีส์จีนแนวย้อนยุค ดราม่า และการแก้แค้น บอกเล่าเรื่องราวของ เย่หลี (รับบทโดย ไป๋ลู่) คุณหนูใหญ่ตระกูลขุนนางที่ถูกสับเปลี่ยนชะตา เธอต้องแต่งงานกับ โม่ซิวเหยา (รับบทโดย เฉิงเหล่ย) อ๋องติงผู้พิการ เพื่อผลประโยชน์ทางการเมือง`;
+            document.getElementById('movie-description').innerText = `ดูหนัง มินเนี่ยน & มอนสเตอร์ (Minions & Monsters) เต็มเรื่อง ฟรี พากย์ไทย/ซับไทย ดูหนัง มินเนี่ยน & มอนสเตอร์ (2026) เต็มเรื่อง พากย์ไทย/ซับไทย นี่คือเรื่องราวแสนชุลมุนอย่างล้นเหลือ, น่าขบขัน และเป็นเรื่องจริงอย่างแน่นอน กับการที่เหล่า มินเนี่ยน ครอบครองฮอลลีวูด, กลายมาเป็นดาราเบอร์ใหญ่, สูญเสียทุกอย่าง, ปลดปล่อยสัตว์ประหลาดออกไปสู่โลก แล้วหลังจากนั้นก็รวมตัวกันเพื่อพยายามที่จะช่วยเหลือดาวเคราะห์ดวงนี้จากความวุ่นวายที่พวกเขาเพิ่งจะสร้างขึ้น ดูออนไลน์ฟรี`;
         }
 
         // Jalankan deteksi judul begitu halaman dimuat
